@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmailJS Setup Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #FF3E1D;
+    }
+    h2 {
+      color: #333;
+      margin-top: 30px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .step {
+      margin-bottom: 30px;
+      border-left: 3px solid #FF3E1D;
+      padding-left: 20px;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 15px 0;
+    }
+    .highlight {
+      background-color: #ffffcc;
+      padding: 10px;
+      border-radius: 4px;
+      border-left: 3px solid #FF3E1D;
+    }
+  </style>
+</head>
+<body>
+  <h1>EmailJS Setup Guide for Your Portfolio</h1>
+  <p>Follow these steps to complete your EmailJS setup and make your contact form send emails directly to your inbox.</p>
+
+  <div class="highlight">
+    <p><strong>Note:</strong> You already have your Service ID (<code>service_3knzzcv</code>) and Public Key (<code>Fw-AMNBW3NIc8soDo</code>) configured. You only need to create an email template and update the template ID in your code.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 1: Create an Email Template</h2>
+    <ol>
+      <li>Go to <a href="https://dashboard.emailjs.com/admin/templates" target="_blank">https://dashboard.emailjs.com/admin/templates</a> in your EmailJS dashboard</li>
+      <li>Click "Create New Template"</li>
+      <li>Design your email template. Here's a simple example:</li>
+      <li>Set the "To email" as <code>{{to_email}}</code> or your email address directly</li>
+      <li>Set the subject as "New Contact from {{user_name}}"</li>
+      <li>For the content, use something like:
+        <pre>
+Name: {{user_name}}
+Email: {{user_email}}
+Message: {{message}}
+        </pre>
+      </li>
+      <li>Save the template</li>
+      <li><strong>Important:</strong> Copy the Template ID (it looks like "template_xxxxxxx")</li>
+    </ol>
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Update Your Code</h2>
+    <ol>
+      <li>Open your contact page file (app/contact/page.jsx)</li>
+      <li>Find this line: <code>const templateId = "template_xxxxxxx" // Replace with your template ID</code></li>
+      <li>Replace <code>template_xxxxxxx</code> with your actual Template ID that you copied in Step 1</li>
+    </ol>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Test Your Form</h2>
+    <p>Fill out and submit your contact form. You should receive an email at milad.b.shirvan@gmail.com with the submitted information.</p>
+  </div>
+
+  <div class="step">
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li>If you get an error about the template ID, make sure you've created a template in your EmailJS dashboard and copied the correct ID</li>
+      <li>Check the browser console for any errors</li>
+      <li>Make sure your EmailJS service is connected properly</li>
+      <li>Make sure your template has the correct parameter names (user_name, user_email, message)</li>
+      <li>Check your spam folder if you don't see the emails</li>
+    </ul>
+  </div>
+
+  <p>That's it! Your contact form should now send emails directly to your inbox whenever someone submits the form.</p>
+</body>
+</html>
