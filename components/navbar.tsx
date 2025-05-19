@@ -61,7 +61,7 @@ export default function Navbar() {
                 variant="outline"
                 className="rounded-xl border-swiss-red/30 hover:bg-swiss-red/10 h-10"
               >
-                <a href="/cv.pdf" download="Milad_Shirvan_CV.pdf">
+                <a href="/cv.pdf" download="CV.pdf">
                   CV
                 </a>
               </Button>
