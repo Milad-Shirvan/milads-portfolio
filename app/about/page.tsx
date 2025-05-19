@@ -46,7 +46,7 @@ export default function AboutPage() {
               </p>
 
               <Button asChild className="glass-button">
-                <a href="/cv.pdf" download="Milad_Shirvan_CV.pdf">
+                <a href="/CV.pdf" download="CV.pdf">
                   Download CV
                   <Download className="ml-2 h-4 w-4" />
                 </a>
