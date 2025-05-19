@@ -47,7 +47,7 @@ export default function Home() {
               size="lg"
               className="rounded-xl border-swiss-red/30 hover:bg-swiss-red/10"
             >
-              <a href="/cv.pdf" download="Milad_Shirvan_CV.pdf">
+              <a href="/CV.pdf" download="CV.pdf">
                 Download CV
                 <Download className="ml-2 h-4 w-4" />
               </a>
