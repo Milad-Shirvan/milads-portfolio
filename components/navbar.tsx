@@ -142,7 +142,7 @@ export default function Navbar() {
             <div className="mt-6 w-full flex flex-col gap-3">
               <a
                 href="/CV.pdf"
-                download
+                download="CV.pdf"
                 className="className=bg-orange-500 text-black text-sm font-semibold py-2 px-4 rounded-full text-center hover:bg-orange-600 transition-colors"
 
               >
