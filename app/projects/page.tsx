@@ -41,11 +41,11 @@ export default function ProjectsPage() {
     },
     {
       id: 4,
-      title: "Auto Typing Effect",
-      description: "A JavaScript implementation of an auto-typing effect for dynamic text display on websites.",
+      title: "Lofi Music Player",
+      description: "A simple music player with a lofi aesthetic, built using HTML, CSS, and JavaScript.",
       technologies: ["HTML", "CSS", "JavaScript"],
       image: "/images/project-4.png",
-      github: "https://github.com/Milad-Shirvan/Auto-typing",
+      github: "https://music-player-pink-gamma.vercel.app/",
     },
   ]
 
